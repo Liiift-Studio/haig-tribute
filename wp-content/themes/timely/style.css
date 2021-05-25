@@ -393,7 +393,7 @@ html {
 }
 
 body {
-	background: #cec290;
+	background: #ccc7b2;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -1296,7 +1296,7 @@ a:hover, a:active {
 			display: grid;
 			grid-template-columns: 16.5em 1fr;
 			grid-template-rows: 1fr minmax(1em, auto);
-			grid-template-areas: "header main" "header sidebar" "header footer";
+			grid-template-areas: "main main" "header sidebar" "header footer";
 		}
 		.site-header {
 			grid-area: header;
@@ -1772,7 +1772,7 @@ body:not(.archive-view) .site-main {
 	@media screen and (min-width: 61.875em) and (min-width: 1300px) {
 		body:not(.archive-view) .post,
 		body:not(.archive-view) .page {
-			grid-template-areas: "header header header header" "featimg featimg featimg featimg" "meta content content content" "footer footer footer footer";
+			grid-template-areas: "header header header header" "featimg featimg featimg featimg" "content content content content" "footer footer footer footer";
 		}
 		body:not(.archive-view) .post .entry-meta,
 		body:not(.archive-view) .page .entry-meta {
@@ -1930,7 +1930,7 @@ body:not(.archive-view) .site-main {
 }
 
 .entry-content {
-	margin: 1em 0;
+	margin: 1.2em 0;
 }
 
 /*--------------------------------------------------------------
@@ -2463,8 +2463,8 @@ a {
   transition: all 0.15s ease-out;
 }
 .nav__title {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
   margin: 0 0 0.25em;
   width: 100px;
   height: 0;
@@ -2530,4 +2530,39 @@ a {
   overflow: visible;
 }
 
-/*# sourceMappingURL=../kuhn/sass/maps/style.css.map */
+.section {
+	height: 100vh;
+	font-size: 40px;
+	font-weight: 100;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .section:nth-child(1) {
+	background: white;
+  }
+  .section:nth-child(2) {
+	background: #dbb87b;
+  }
+  .section:nth-child(3) {
+	background: #c6b866;
+  }
+  .section:nth-child(4) {
+	background: #a29568;
+  }
+  .section:nth-child(5) {
+	background: #d6ac9d;
+  }
+  .section:nth-child(6) {
+	background: #a0895a;
+  }
+  .section:nth-child(7) {
+	background: #ddbda8;
+  }
+  .section .sect-container {
+	width: 960px;
+	display: flex;
+	flex-flow: row wrap;
+  }
+  /*# sourceMappingURL=../kuhn/sass/maps/style.css.map */

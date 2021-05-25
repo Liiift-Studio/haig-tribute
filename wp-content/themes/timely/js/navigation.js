@@ -1,4 +1,4 @@
-/* global kuhnScreenReaderText */
+/* global timelyScreenReaderText */
 /**
  * Theme functions file.
  *
@@ -13,7 +13,7 @@
 		// Add dropdown toggle that displays child menu items.
 		var dropdownToggle = $( '<button />', { 'class': 'dropdown-toggle', 'aria-expanded': false })
 			.append( $( '<span />', { 'class': 'dropdown-symbol', text: '+' }) )
-			.append( $( '<span />', { 'class': 'screen-reader-text', text: kuhnScreenReaderText.expand }) );
+			.append( $( '<span />', { 'class': 'screen-reader-text', text: timelyScreenReaderText.expand }) );
 
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( dropdownToggle );
 
@@ -29,7 +29,7 @@
 
 			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 
-			screenReaderSpan.text( screenReaderSpan.text() === kuhnScreenReaderText.expand ? kuhnScreenReaderText.collapse : kuhnScreenReaderText.expand );
+			screenReaderSpan.text( screenReaderSpan.text() === timelyScreenReaderText.expand ? timelyScreenReaderText.collapse : timelyScreenReaderText.expand );
 		});
 	}
 

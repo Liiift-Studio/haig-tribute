@@ -47,54 +47,54 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 			<!-- timeline -->
-		    <nav class="nav__wrapper">
+			<nav class="nav__wrapper" id="myNavbar">
 		      <ul class="nav">
 
 		        <li role="presentation" class="active">
 		          <a href="#section1">
-		            <span class="nav__counter">1952</span>
-		            <h3 class="nav__title">Birth</h3>
-		            <p class="nav__body"><strong>Early Years</strong>. Haig's childhood was...</p>
+		            <span class="nav__counter">1944</span>
+		            <h3 class="nav__title">Early Years</h3>
+		            <p class="nav__body"><strong>Piraeus and beyond</strong></p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="#section2">
-		            <span class="nav__counter">1965</span>
-		            <h3 class="nav__title">School Days</h3>
-		            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+		            <span class="nav__counter">1964</span>
+		            <h3 class="nav__title">Odyssey Years</h3>
+		            <p class="nav__body"><strong>In the UK</strong></p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="#section3">
-		            <span class="nav__counter">1980</span>
-		            <h3 class="nav__title">In Business</h3>
-		            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+		            <span class="nav__counter">1974</span>
+		            <h3 class="nav__title">Creative Years</h3>
+		            <p class="nav__body"><strong>Return to Greece</strong></p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="#section4">
-		            <span class="nav__counter">1995</span>
-		            <h3 class="nav__title">Section 4 Title</h3>
-		            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+		            <span class="nav__counter">1994</span>
+		            <h3 class="nav__title">Mature Years</h3>
+		            <p class="nav__body"></p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="#section5">
-		            <span class="nav__counter">2005</span>
-		            <h3 class="nav__title">Retirement?</h3>
-		            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+		            <span class="nav__counter">2004</span>
+		            <h3 class="nav__title">Legacy Years</h3>
+		            <p class="nav__body">Retirement and Grandkids</p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="#section6">
 		            <span class="nav__counter">2021</span>
-		            <h3 class="nav__title">Section 6 Title</h3>
-		            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+		            <h3 class="nav__title">Eulogies</h3>
+		            <p class="nav__body"></p>
 		          </a>
 		        </li>
 
