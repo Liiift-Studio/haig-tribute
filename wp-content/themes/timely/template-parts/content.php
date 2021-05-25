@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="<?php echo substr(strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', json_encode(get_the_category()[0]->name)))), 1, 5); ?>" <?php post_class(); ?>>
 
 	<?php
 	if ( has_post_thumbnail() ) { ?>
