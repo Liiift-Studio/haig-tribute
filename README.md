@@ -11,7 +11,3 @@ Navigate to PHP myadmin.
 Create database that matches .mssql file's title.
 
 Import .mssql file into that new database.
-
-WP Login
-user: liiift 
-pswrd: NeedaLiiift?
