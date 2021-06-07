@@ -78,15 +78,15 @@
 		          <a href="<?php is_front_page() ? print '#era-4' : print esc_url( home_url( '/' ) ).'#era-4'; ?>">
 		            <span class="nav__counter">1994</span>
 		            <h3 class="nav__title">Mature Years</h3>
-		            <p class="nav__body"></p>
+		            <p class="nav__body"><strong></strong></p>
 		          </a>
 		        </li>
 
 		        <li role="presentation">
 		          <a href="<?php is_front_page() ? print '#era-5' : print esc_url( home_url( '/' ) ).'#era-5'; ?>">
-		            <span class="nav__counter">2004</span>
-		            <h3 class="nav__title">Legacy Years</h3>
-		            <p class="nav__body">Retirement and Grandkids</p>
+		            <span class="nav__counter">2009</span>
+		            <h3 class="nav__title">Legacy Years: </h3>
+		            <p class="nav__body"><strong>Retirement and Grandkids</strong></p>
 		          </a>
 		        </li>
 
@@ -94,7 +94,7 @@
 		          <a href="<?php is_front_page() ? print '#era-6' : print esc_url( home_url( '/' ) ).'#era-6'; ?>">
 		            <span class="nav__counter">2021</span>
 		            <h3 class="nav__title">Eulogies</h3>
-		            <p class="nav__body"></p>
+		            <p class="nav__body"><strong></strong></p>
 		          </a>
 		        </li>
 
@@ -102,4 +102,3 @@
 		  </nav><!-- .timeline -->
 
 	</header><!-- #masthead -->
-
