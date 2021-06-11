@@ -54,7 +54,7 @@
 		          <a href="<?php is_front_page() ? print '#era-1' : print esc_url( home_url( '/' ) ).'#era-1'; ?>">
 		            <span class="nav__counter">1944</span>
 		            <h3 class="nav__title">Early Years</h3>
-		            <p class="nav__body"><strong>Piraeus and beyond</strong></p>
+		            
 		          </a>
 		        </li>
 
@@ -62,7 +62,7 @@
 		          <a href="<?php is_front_page() ? print '#era-2' : print esc_url( home_url( '/' ) ).'#era-2'; ?>">
 		            <span class="nav__counter">1964</span>
 		            <h3 class="nav__title">Odyssey Years</h3>
-		            <p class="nav__body"><strong>In the UK</strong></p>
+
 		          </a>
 		        </li>
 
@@ -70,7 +70,7 @@
 		          <a href="<?php is_front_page() ? print '#era-3' : print esc_url( home_url( '/' ) ).'#era-3'; ?>">
 		            <span class="nav__counter">1974</span>
 		            <h3 class="nav__title">Creative Years</h3>
-		            <p class="nav__body"><strong>Return to Greece</strong></p>
+
 		          </a>
 		        </li>
 
@@ -78,7 +78,7 @@
 		          <a href="<?php is_front_page() ? print '#era-4' : print esc_url( home_url( '/' ) ).'#era-4'; ?>">
 		            <span class="nav__counter">1994</span>
 		            <h3 class="nav__title">Mature Years</h3>
-		            <p class="nav__body"><strong></strong></p>
+
 		          </a>
 		        </li>
 
@@ -86,7 +86,7 @@
 		          <a href="<?php is_front_page() ? print '#era-5' : print esc_url( home_url( '/' ) ).'#era-5'; ?>">
 		            <span class="nav__counter">2009</span>
 		            <h3 class="nav__title">Legacy Years: </h3>
-		            <p class="nav__body"><strong>Retirement and Grandkids</strong></p>
+
 		          </a>
 		        </li>
 
@@ -94,7 +94,7 @@
 		          <a href="<?php is_front_page() ? print '#era-6' : print esc_url( home_url( '/' ) ).'#era-6'; ?>">
 		            <span class="nav__counter">2021</span>
 		            <h3 class="nav__title">Eulogies</h3>
-		            <p class="nav__body"><strong></strong></p>
+
 		          </a>
 		        </li>
 
