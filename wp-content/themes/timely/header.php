@@ -50,7 +50,7 @@
 			<nav class="nav__wrapper" id="myNavbar">
 		      <ul class="nav">
 
-		        <li role="presentation" class="active">
+		        <li role="presentation">
 		          <a href="<?php is_front_page() ? print '#era-1' : print esc_url( home_url( '/' ) ).'#era-1'; ?>">
 		            <span class="nav__counter">1944</span>
 		            <h3 class="nav__title">Early Years</h3>
