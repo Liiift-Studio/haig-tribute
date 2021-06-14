@@ -28,7 +28,7 @@
 	<?php } ?>
 
 	<header class="entry-header">
-		<?php kuhn_the_category_list(); ?>
+		<?php timely_the_category_list(); ?>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -41,7 +41,7 @@
 	<?php
 	if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta">
-		<?php kuhn_posted_on(); ?>
+		<?php timely_posted_on(); ?>
 	</div><!-- .entry-meta -->
 	<?php
 	endif; ?>
@@ -51,12 +51,12 @@
 		if ( is_singular() ) {
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'kuhn' ), array( 'span' => array( 'class' => array() ) ) ),
+				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'timely' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kuhn' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'timely' ),
 				'after'  => '</div>',
 			) );
 		} else {
@@ -67,7 +67,7 @@
 	<?php
 	if ( is_singular() ) { ?>
 		<footer class="entry-footer">
-			<?php kuhn_entry_footer(); ?>
+			<?php timely_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	<?php } ?>
 

@@ -6,11 +6,11 @@
  * Gently lifted and reworked from Anders Norén's Lovecraft theme: http://www.andersnoren.se/teman/lovecraft-wordpress-theme/
  */
 
-class kuhn_recent_comments extends WP_Widget {
+class timely_recent_comments extends WP_Widget {
 
 	function __construct() {
-        $widget_ops = array( 'classname' => 'widget_kuhn_recent_comments', 'description' => __('Displays recent comments with user avatar and excerpt.', 'kuhn') );
-        parent::__construct( 'widget_kuhn_recent_comments', __('Enhanced Recent Comments','kuhn'), $widget_ops );
+        $widget_ops = array( 'classname' => 'widget_timely_recent_comments', 'description' => __('Displays recent comments with user avatar and excerpt.', 'timely') );
+        parent::__construct( 'widget_timely_recent_comments', __('Enhanced Recent Comments','timely'), $widget_ops );
     }
 
 	function widget($args, $instance) {
@@ -29,7 +29,7 @@ class kuhn_recent_comments extends WP_Widget {
 		if (!empty($widget_title)) {
 			echo $before_title . $widget_title . $after_title;
 		} else {
-			echo $before_title . esc_html__( 'Recent Comments', 'kuhn' ) . $after_title;
+			echo $before_title . esc_html__( 'Recent Comments', 'timely' ) . $after_title;
 		}
 		?>
 
@@ -62,7 +62,7 @@ class kuhn_recent_comments extends WP_Widget {
 									</div>
 									<p class="title"><span><?php comment_author(); ?></span></p>
 									<p class="excerpt"><?php echo esc_attr(comment_excerpt($comment->comment_ID)); ?></p>
-									<p class="original-title"><span><?php _e('on','kuhn'); ?></span> <?php the_title_attribute( array( 'post' => $comment->comment_post_ID ) ); ?></p>
+									<p class="original-title"><span><?php _e('on','timely'); ?></span> <?php the_title_attribute( array( 'post' => $comment->comment_post_ID ) ); ?></p>
 								</a>
 							</li>
 
@@ -100,30 +100,30 @@ class kuhn_recent_comments extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id('widget_title')); ?>"><?php  _e('Title', 'kuhn'); ?>:
+			<label for="<?php echo esc_attr($this->get_field_id('widget_title')); ?>"><?php  _e('Title', 'timely'); ?>:
 			<input id="<?php echo esc_attr($this->get_field_id('widget_title')); ?>" name="<?php echo esc_attr($this->get_field_name('widget_title')); ?>" type="text" class="widefat" value="<?php echo esc_attr($widget_title); ?>" /></label>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('number_of_comments'); ?>"><?php _e('Number of comments to display', 'kuhn'); ?>:
+			<label for="<?php echo $this->get_field_id('number_of_comments'); ?>"><?php _e('Number of comments to display', 'timely'); ?>:
 			<input id="<?php echo $this->get_field_id('number_of_comments'); ?>" name="<?php echo $this->get_field_name('number_of_comments'); ?>" type="text" class="widefat" value="<?php echo esc_attr($number_of_comments); ?>" /></label>
-			<small>(<?php _e('Defaults to 5 if empty','kuhn'); ?>)</small>
+			<small>(<?php _e('Defaults to 5 if empty','timely'); ?>)</small>
 		</p>
 
 		<?php
 	}
 }
 
-register_widget('kuhn_recent_comments');
+register_widget('timely_recent_comments');
 
 /**
  * Remove the line above and uncomment the lines below to replace the default widget
  */
 
 /*
-function kuhn_comments_widget_registration() {
+function timely_comments_widget_registration() {
 	unregister_widget('WP_Widget_Recent_Comments');
-	register_widget('kuhn_recent_comments');
+	register_widget('timely_recent_comments');
 }
-add_action('widgets_init', 'kuhn_comments_widget_registration');
+add_action('widgets_init', 'timely_comments_widget_registration');
 */

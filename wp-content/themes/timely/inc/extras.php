@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function kuhn_body_classes( $classes ) {
+function timely_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -26,15 +26,15 @@ function kuhn_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'kuhn_body_classes' );
+add_filter( 'body_class', 'timely_body_classes' );
 
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function kuhn_pingback_header() {
+function timely_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'kuhn_pingback_header' );
+add_action( 'wp_head', 'timely_pingback_header' );

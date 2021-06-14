@@ -24,14 +24,14 @@
 	<?php } ?>
 
 	<header class="entry-header">
-		<?php kuhn_the_category_list(); ?>
+		<?php timely_the_category_list(); ?>
 		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );	?>
 	</header><!-- .entry-header -->
 
 	<?php
 	if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta">
-		<?php kuhn_posted_on(); ?>
+		<?php timely_posted_on(); ?>
 	</div><!-- .entry-meta -->
 	<?php
 	endif; ?>

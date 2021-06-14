@@ -1139,67 +1139,67 @@ a:hover, a:active {
 }
 
 /* Custom Recent Comments and Recent Posts widgets */
-.content-area .widget_kuhn_recent_comments li a,
-.content-area .widget_kuhn_recent_posts li a {
+.content-area .widget_timely_recent_comments li a,
+.content-area .widget_timely_recent_posts li a {
 	color: black;
 }
 
-.widget_kuhn_recent_comments li,
-.widget_kuhn_recent_posts li {
+.widget_timely_recent_comments li,
+.widget_timely_recent_posts li {
 	position: relative;
 	padding: 0 0 1em 70px;
 	margin-bottom: 2em;
 	border-bottom: 1px solid #c3c3c3;
 }
 
-.widget_kuhn_recent_comments ul,
-.widget_kuhn_recent_posts ul {
+.widget_timely_recent_comments ul,
+.widget_timely_recent_posts ul {
 	margin-top: 2em;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 
-.widget_kuhn_recent_comments li:last-child,
-.widget_kuhn_recent_posts li:last-child {
+.widget_timely_recent_comments li:last-child,
+.widget_timely_recent_posts li:last-child {
 	margin-bottom: 0;
 	border-bottom: none;
 	padding-bottom: 0;
 }
 
-.widget_kuhn_recent_comments a,
-.widget_kuhn_recent_posts a {
+.widget_timely_recent_comments a,
+.widget_timely_recent_posts a {
 	display: block;
 	font-size: 1em;
 }
 
-.widget_kuhn_recent_comments a:focus, .widget_kuhn_recent_comments a:hover,
-.widget_kuhn_recent_posts a:focus,
-.widget_kuhn_recent_posts a:hover {
+.widget_timely_recent_comments a:focus, .widget_timely_recent_comments a:hover,
+.widget_timely_recent_posts a:focus,
+.widget_timely_recent_posts a:hover {
 	text-decoration: none;
 	border-bottom: none;
 }
 
-.widget_kuhn_recent_comments .post-icon,
-.widget_kuhn_recent_posts .post-icon {
+.widget_timely_recent_comments .post-icon,
+.widget_timely_recent_posts .post-icon {
 	position: absolute;
 	left: 0;
 	width: 50px;
 	height: 50px;
 }
 
-.widget_kuhn_recent_comments .post-icon img {
+.widget_timely_recent_comments .post-icon img {
 	border-radius: 50px;
 }
 
-.widget_kuhn_recent_comments .title,
-.widget_kuhn_recent_comments .original-title {
+.widget_timely_recent_comments .title,
+.widget_timely_recent_comments .original-title {
 	margin-top: 0;
 	margin-bottom: .8em;
 	font-size: .7em;
 	line-height: 1.4em;
 }
 
-.widget_kuhn_recent_comments .excerpt {
+.widget_timely_recent_comments .excerpt {
 	margin-top: 0;
 	margin-bottom: .8em;
 	font-size: .8em;
@@ -1207,38 +1207,38 @@ a:hover, a:active {
 	line-height: 1.4em;
 }
 
-.widget_kuhn_recent_comments .excerpt:before {
+.widget_timely_recent_comments .excerpt:before {
 	content: "“";
 }
 
-.widget_kuhn_recent_comments .excerpt:after {
+.widget_timely_recent_comments .excerpt:after {
 	content: "”";
 }
 
-.widget_kuhn_recent_comments .original-title {
+.widget_timely_recent_comments .original-title {
 	color: #7D7D7D;
 	font-weight: 500;
 }
 
-.widget_kuhn_recent_comments .original-title span {
+.widget_timely_recent_comments .original-title span {
 	font-weight: normal;
 	font-style: italic;
 }
 
-.widget_kuhn_recent_comments a:focus .original-title,
-.widget_kuhn_recent_comments a:hover .original-title {
+.widget_timely_recent_comments a:focus .original-title,
+.widget_timely_recent_comments a:hover .original-title {
 	text-decoration: underline;
 }
 
-.widget_kuhn_recent_comments a:focus .title,
-.widget_kuhn_recent_comments a:focus .excerpt,
-.widget_kuhn_recent_comments a:hover .title,
-.widget_kuhn_recent_comments a:hover .excerpt {
+.widget_timely_recent_comments a:focus .title,
+.widget_timely_recent_comments a:focus .excerpt,
+.widget_timely_recent_comments a:hover .title,
+.widget_timely_recent_comments a:hover .excerpt {
 	color: inherit;
 }
 
 /* Custom Recent Posts widget */
-.widget_kuhn_recent_posts .post-icon {
+.widget_timely_recent_posts .post-icon {
 	width: 50px;
 	height: 50px;
 	font-size: 1.3em;
@@ -1248,21 +1248,21 @@ a:hover, a:active {
 	background: #333333;
 }
 
-.widget_kuhn_recent_posts .title {
+.widget_timely_recent_posts .title {
 	margin: 0;
 	font-size: .9em;
 	line-height: 1.4em;
 }
 
-.widget_kuhn_recent_posts .meta {
+.widget_timely_recent_posts .meta {
 	margin: 0 0 .8em;
 	font-size: .7em;
 	text-transform: uppercase;
 	color: #7D7D7D;
 }
 
-.widget_kuhn_recent_posts a:hover .title,
-.widget_kuhn_recent_posts a:focus .title {
+.widget_timely_recent_posts a:hover .title,
+.widget_timely_recent_posts a:focus .title {
 	text-decoration: underline;
 }
 

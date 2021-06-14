@@ -22,14 +22,14 @@
 						'menu_class'     => 'social-links-menu',
 						'depth'          => 1,
 						'link_before'    => '<span class="screen-reader-text">',
-						'link_after'     => '</span>' . kuhn_get_svg( array( 'icon' => 'chain' ) ),
+						'link_after'     => '</span>' . timely_get_svg( array( 'icon' => 'chain' ) ),
 					) );
 				?>
 			</nav><!-- .social-menu -->
 		<?php } ?>
 		<div class="site-info">
 			<span class="sitemeta">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kuhn' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s.', 'kuhn' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'timely' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s.', 'timely' ), 'WordPress' ); ?></a>
 			</span>
 			<span class="sitemeta">
 				<?php printf( esc_html__( 'Theme: %1$s.', 'timely' ), '<a href="https://github.com/liiiftstudio/timely" rel="nofollow">Timely</a>' ); ?>

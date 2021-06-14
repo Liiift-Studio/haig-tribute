@@ -7,11 +7,11 @@
  */
 
 
-class kuhn_recent_posts extends WP_Widget {
+class timely_recent_posts extends WP_Widget {
 
 	function __construct() {
-        $widget_ops = array( 'classname' => 'widget_kuhn_recent_posts', 'description' => __('Displays most recent posts with featured image and publishing date.', 'kuhn') );
-        parent::__construct( 'widget_kuhn_recent_posts', __('Enhanced Recent Posts','kuhn'), $widget_ops );
+        $widget_ops = array( 'classname' => 'widget_timely_recent_posts', 'description' => __('Displays most recent posts with featured image and publishing date.', 'timely') );
+        parent::__construct( 'widget_timely_recent_posts', __('Enhanced Recent Posts','timely'), $widget_ops );
     }
 
 	function widget($args, $instance) {
@@ -31,7 +31,7 @@ class kuhn_recent_posts extends WP_Widget {
 		if (!empty($widget_title)) {
 			echo $before_title . $widget_title . $after_title;
 		} else {
-			echo $before_title . esc_html__( 'Recent Posts', 'kuhn' ) . $after_title;
+			echo $before_title . esc_html__( 'Recent Posts', 'timely' ) . $after_title;
 		}
 		?>
 
@@ -41,7 +41,7 @@ class kuhn_recent_posts extends WP_Widget {
 					if ( $number_of_posts == 0 ) $number_of_posts = 5;
 
 					$recent_posts = new WP_Query( apply_filters(
-					'kuhn_recent_posts_args', array(
+					'timely_recent_posts_args', array(
 					        'posts_per_page'      => $number_of_posts,
 					        'post_status'         => 'publish',
 					        'ignore_sticky_posts' => true
@@ -103,29 +103,29 @@ class kuhn_recent_posts extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php  _e('Title', 'kuhn'); ?>:
+			<label for="<?php echo $this->get_field_id('widget_title'); ?>"><?php  _e('Title', 'timely'); ?>:
 			<input id="<?php echo $this->get_field_id('widget_title'); ?>" name="<?php echo $this->get_field_name('widget_title'); ?>" type="text" class="widefat" value="<?php echo esc_attr($widget_title); ?>" /></label>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id('number_of_posts'); ?>"><?php _e('Number of posts to display', 'kuhn'); ?>:
+			<label for="<?php echo $this->get_field_id('number_of_posts'); ?>"><?php _e('Number of posts to display', 'timely'); ?>:
 			<input id="<?php echo $this->get_field_id('number_of_posts'); ?>" name="<?php echo $this->get_field_name('number_of_posts'); ?>" type="text" class="widefat" value="<?php echo esc_attr($number_of_posts); ?>" /></label>
-			<small>(<?php _e('Defaults to 5 if empty','kuhn'); ?>)</small>
+			<small>(<?php _e('Defaults to 5 if empty','timely'); ?>)</small>
 		</p>
 
 		<?php
 	}
 }
-register_widget('kuhn_recent_posts');
+register_widget('timely_recent_posts');
 
 /**
  * Remove the line above and uncomment the lines below to replace the default widget
  */
 
 /*
-function kuhn_posts_widget_registration() {
+function timely_posts_widget_registration() {
   unregister_widget('WP_Widget_Recent_Posts');
-  register_widget('kuhn_recent_posts');
+  register_widget('timely_recent_posts');
 }
-add_action('widgets_init', 'kuhn_posts_widget_registration');
+add_action('widgets_init', 'timely_posts_widget_registration');
 */

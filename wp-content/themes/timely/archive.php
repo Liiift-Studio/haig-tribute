@@ -23,7 +23,7 @@ get_header(); ?>
 
 		<?php
 
-		echo kuhn_get_the_archive_navigation( 'next' );
+		echo timely_get_the_archive_navigation( 'next' );
 		
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
@@ -37,7 +37,7 @@ get_header(); ?>
 
 		endwhile;
 
-		echo kuhn_get_the_archive_navigation( 'previous' );
+		echo timely_get_the_archive_navigation( 'previous' );
 
 	else :
 

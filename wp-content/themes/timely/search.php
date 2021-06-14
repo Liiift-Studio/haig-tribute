@@ -24,11 +24,11 @@ endif;
 	if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'kuhn' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'timely' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</header><!-- .page-header -->
 
 		<?php
-		echo kuhn_get_the_archive_navigation( 'next' );
+		echo timely_get_the_archive_navigation( 'next' );
 		
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
@@ -42,7 +42,7 @@ endif;
 
 		endwhile;
 
-		echo kuhn_get_the_archive_navigation( 'previous' );
+		echo timely_get_the_archive_navigation( 'previous' );
 
 	else :
 
