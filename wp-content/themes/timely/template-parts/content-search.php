@@ -17,7 +17,7 @@
 		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 			<?php
 			$thumbnail_alt = 'Go to ' . get_the_title();
-			the_post_thumbnail('kuhn-index', 'alt=' . $thumbnail_alt);
+			the_post_thumbnail('timely-index', 'alt=' . $thumbnail_alt);
 			?>
 		</a>
 	</figure><!-- .featured-image full-bleed -->

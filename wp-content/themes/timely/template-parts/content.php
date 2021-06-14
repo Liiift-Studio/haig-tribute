@@ -18,11 +18,11 @@
 		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 			<?php
 			$thumbnail_alt = 'Go to ' . get_the_title();
-			the_post_thumbnail('kuhn-index', 'alt=' . $thumbnail_alt);
+			the_post_thumbnail('timely-index', 'alt=' . $thumbnail_alt);
 			?>
 		</a>
 		<?php } else {
-			the_post_thumbnail('kuhn-index');
+			the_post_thumbnail('timely-index');
 		} ?>
 	</figure><!-- .featured-image full-bleed -->
 	<?php } ?>
